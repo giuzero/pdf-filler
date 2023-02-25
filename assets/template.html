@@ -1,9 +1,18 @@
-<p><img style="display: block; margin-left: auto; margin-right: auto;" src="[[logo]]" alt="interactive connection" width="45" /></p>
-<p style="text-align: right;">[[city]],[[date]]</p>
-<p>Dear {{name}},</p>
-<p>we are pleased to tell you that the due royalties for your services regarding {{period}} semester amount to &euro; {{amount}}.</p>
-<p>Please send your invoice to:</p>
-<p>[[address]]<br /><br /></p>
-<p>Thanks, kind regards</p>
-<br /><br />
-<p>[[company]]</p>
+<body>
+<div id="header">
+    <img src="{{logo}}" />
+    <div id="where-when">
+        <p>{{city}},{{printing_date}}</p>
+    </div>
+</div>
+<div id="corpus">
+    <p>Dear {{name}},
+    <br/>we are pleased to tell you that the due royalties for your services regarding {{period}} semester amount to &euro; {{amount}}.
+    <br/>Please send your invoice to:</p>
+    <p id="address">{{address}}</p>
+<div id="signature">
+    <p>Thanks, kind regards</p>
+    <p>{{company}}</p>
+</div>
+</div>
+</body>
